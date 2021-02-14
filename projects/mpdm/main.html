@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Javascript Robot Simulator</title>
+    <title>Hide-and-Seek Bots</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -55,8 +55,8 @@
         <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
           <div class="col-lg-10 ftco-animate d-flex align-items-center">
           	<div class="text text-center">
-          		<h1 class="mb-3 bread">Robot Kinematic Simulator and Motion Planner</h1>
-	            <p class="breadcrumbs"><span class="mr-2"><a href="../../index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="../../index.html#projects-section">Projects<i class="ion-ios-arrow-forward"></i></a></span> <span>Robot Kinematic Simulator and Motion Planner <i class="ion-ios-arrow-forward"></i></span></p>
+          		<h1 class="mb-3 bread">Robot Hide-and-Seek using Multi-Policy Decision Making</h1>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="../../index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="../../index.html#projects-section">Projects<i class="ion-ios-arrow-forward"></i></a></span> <span>Robot Hide-and-Seek using Multi-Policy Decision Making<i class="ion-ios-arrow-forward"></i></span></p>
             </div>
           </div>
         </div>
@@ -69,38 +69,22 @@
           <div class="col-lg-8 ftco-animate">
             
             <p>
-				This project includes implementation of many robot algorithms in javascript. Hence the simulations can be viewed on the browser without the need of any separate software. 
-				The implementations include:
-				<ul>
-					<li>Forward Kinematics</li>
-					<li>Inverse Kinematics</li>
-					<li>Set-point Control</li>
-					<li>2D path planning algorithms</li>
-					<li>Configuration-space motion planning using RRT*</li>
-				</ul>
+				In this project, we are designing strategies for a group of robots/ agents to catch an adversary within a known map.
+				The position of the adversary is unkown to the agents, and they maintain a belief of the position of the adversary as well as that of all other agents.
+			</p>
+			<p>
+				The agents may try several simple policies to catch the adversary, e.g. hallway patrol (random action), belief gobbler (action towards maximum belief state among neighbours), seeker (action towards maximum (belief/distance)). 
+				The overall strategy - Decentralized Multi-policy Decision Making - is that each agent forward simulates each of the simple policies and selects the optimal policy. This policy is followed to get the action for next k time-steps. 
 			</p>
             
             <h2 class="mb-3">Media: </h2>
             
             
 			<div class="videoWrapper">
-                <iframe width="560" height="349" src="https://www.youtube.com/embed/7qLsJMk3WfM" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="349" src="https://www.youtube.com/embed/a_3J8hrIgCQ" frameborder="0" allowfullscreen></iframe>
             </div>
 			<br>
-			
-			<div class="videoWrapper">
-                <iframe width="560" height="349" src="https://www.youtube.com/embed/O-k6i73YHXA" frameborder="0" allowfullscreen></iframe>
-            </div>
-			<br>
-			
-			<div class="videoWrapper">
-                <iframe width="560" height="349" src="https://www.youtube.com/embed/j2ki7M7ZqFI" frameborder="0" allowfullscreen></iframe>
-            </div>
-			<br>
-            
 		
-            <h2 class="mb-3"><a href = "https://github.com/nalinbendapudi/Robot-Kinematic-Simulation-and-Motion-Planning" target="_blank" class="fa fa-github" style="font-size:48px;"> Code </a></h2>
-            
             
             <!-- TAGS: HAVE TO INCLUDE SIDEBAR FOR THIS
             
